@@ -6,6 +6,23 @@
   <meta name="description" content="Wesley Schapper — Cybersecurity portfolio: resume, skills, projects, certifications." />
   <title>Wesley Schapper | Cybersecurity Portfolio</title>
   <link rel="stylesheet" href="assets/styles.css" />
+
+  <style>
+    .thm-inline{
+      margin: 26px 0 14px; /* more space from header, still clean above H1 */ /* even spacing above/below badge */
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .thm-inline iframe{
+      border: none;
+      width: 320px;
+      height: 90px;
+    }
+    @media (max-width: 900px){
+      .thm-inline iframe{ width: 100%; max-width: 360px; height: 100px; }
+    }
+  </style>
 </head>
 
 <body>
@@ -34,7 +51,7 @@
           <a href="#contact">Contact</a>
         </div>
       </nav>
-    </div>
+</div>
   </header>
 
   <main id="main">
@@ -42,7 +59,15 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <h1>Cybersecurity & Network Engineering</h1>
+          <div class="thm-inline" aria-label="TryHackMe badge">
+            <iframe
+              src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=5092387"
+              title="TryHackMe Badge"
+              loading="lazy"
+            ></iframe>
+          </div>
+
+          <h1>Cybersecurity &amp; Digital Forensics</h1>
           <p class="lead">
             Hands-on experience in threat detection, vulnerability assessment, secure network configuration,
             and security-focused technical support.
@@ -74,6 +99,7 @@
         <aside class="hero-card" aria-label="Highlights">
           <h2>Highlights</h2>
           <ul class="checklist">
+            <li>Training Support Technician (Oct 2025 – Present)</li>
             <li>Security+ certified</li>
             <li>NGT Academy: training assistant (cybersecurity & networking)</li>
             <li>Built labs + multi-site networking projects</li>
@@ -149,6 +175,13 @@
           <div class="card">
             <h3>Experience snapshot</h3>
             <ul class="timeline">
+
+              <li>
+                <div class="tl-title">Training Support Technician — Cybersecurity & Networking</div>
+                <div class="tl-meta">NGT Academy · Remote · Oct 2025 – Present</div>
+                <div class="tl-body">Operational support for labs, troubleshooting, student enablement, and delivery support for cybersecurity/networking training.</div>
+              </li>
+
               <li>
                 <div class="tl-title">Training Assistant — Cybersecurity & Networking (Volunteer)</div>
                 <div class="tl-meta">NGT Academy · Remote · Jan 2024 – Present</div>
@@ -335,12 +368,18 @@
           <div class="card">
             <h3>Current</h3>
             <ul class="cert-list">
-              <li><strong>CompTIA Security+</strong> <span class="muted">· Nov 2024</span></li>
-              <li><strong>NGT Cybersecurity Associate (NCSA)</strong> <span class="muted">· May 2025</span></li>
               <li><strong>TryHackMe — Cyber Security 101</strong> <span class="muted">· Dec 2025</span></li>
+              <li><strong>NGT Cybersecurity Associate (NCSA)</strong> <span class="muted">· May 2025</span></li>
+              <li><strong>CompTIA Security+</strong> <span class="muted">· Nov 2024</span></li>
               <li><strong>NGT Full Stack Network Professional (FSNP)</strong> <span class="muted">· Mar 2024</span></li>
               <li><strong>NGT Full Stack Network Associate (FSNA)</strong> <span class="muted">· Dec 2023</span></li>
             </ul>
+          </div>
+
+<p class="muted" style="margin-top:10px;">
+              Static image option:
+              <a href="https://tryhackme-badges.s3.amazonaws.com/SharkSkin.png" target="_blank" rel="noopener">SharkSkin.png</a>
+            </p>
           </div>
 
           <div class="card">
