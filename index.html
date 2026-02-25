@@ -14,13 +14,13 @@
       align-items: center;
       justify-content: flex-start;
     }
-    .thm-inline iframe{
-      border: none;
+    .thm-inline img{
       width: 320px;
-      height: 90px;
+      height: auto;
+      display: block;
     }
     @media (max-width: 900px){
-      .thm-inline iframe{ width: 100%; max-width: 360px; height: 100px; }
+      .thm-inline img{ width: 100%; max-width: 360px; height: auto; }
     }
   </style>
 </head>
@@ -60,11 +60,7 @@
       <div class="container hero-grid">
         <div>
           <div class="thm-inline" aria-label="TryHackMe badge">
-            <iframe
-              src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=5092387"
-              title="TryHackMe Badge"
-              loading="lazy"
-            ></iframe>
+            <img src="https://tryhackme-badges.s3.amazonaws.com/SharkSkin.png" alt="Your Image Badge" />
           </div>
 
           <h1>Cybersecurity &amp; Digital Forensics</h1>
